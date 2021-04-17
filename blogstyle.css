@@ -1,0 +1,158 @@
+*
+{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+body
+{
+	font-size: 20px;
+	overflow-x: hidden;
+	color:white;
+}
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(header1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100vh;
+}
+.clearfix:after
+{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+.navigation 
+{
+	max-width: 1180px;
+	margin:0 auto;
+}
+.navigation p{
+	font-family: 'Akaya Kanadaka';
+	font-size: 150%;
+	color:#8ab5a9;
+	float:left;
+	margin-top: 20px;
+}
+.links
+{
+	float:right;
+	margin-top: 30px;
+}
+.links li
+{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.links li a 
+{
+	color:#8ab5a9;
+	text-decoration: none;
+	font-family: 'Annie Use Your Telescope';
+	font-size: 120%;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.links a:hover
+{
+	border-bottom: 2px solid white;
+}
+
+
+
+.animate__slideInDown
+{
+	animation-duration: 3s;
+}
+.icon
+{
+	display:none;
+}
+
+.bloghead h1
+{
+	font-size: 500%;
+	font-family: coiny;
+	text-align: center;
+	margin-top: 25vh;
+	animation:sizechange 2s infinite;
+	text-shadow: 4px 4px 10px #000000;
+}
+.bloghead p
+{
+	font-size: 130%;
+	font-family: comic sans ms;
+	text-align: center;
+	color: #86ad9d;
+	font-weight: bold;
+
+}
+
+@keyframes sizechange
+{
+	0%{ font-size:500%; color:#f0a5b9;}
+	25%{ font-size:550%; color:#baeb83; }
+	50%{ font-size:600% ; color:#f7f12d;}
+	75%{ font-size:550%; color: #b4a5f0;}
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 790px)
+{
+	.links
+	{
+		display: none;
+
+	}
+	.icon
+	{
+		display:inline-block;
+		color:white;
+		float:right;
+		margin-top: 30px;
+		margin-right: 30px;
+
+	}
+	.links{float:left;}
+	.links li
+	{
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.bloghead h1
+	{
+		animation: colorchange 2s infinite;
+	}
+	@keyframes colorchange
+	{
+	0%{ font-size:300%; color:#f0a5b9;}
+	25%{ font-size:350%; color:#baeb83; }
+	50%{ font-size:400% ; color:#f7f12d;}
+	75%{ font-size:350%; color: #b4a5f0;}
+	}
+
+}
+@media only screen and (max-width: 563px)
+{
+	.links li a 
+	{
+		font-size:90%;
+	}
+}
